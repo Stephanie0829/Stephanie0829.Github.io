@@ -329,7 +329,6 @@ form {
     font-weight: lighter;
     font-style: italic;
     font-size: smaller;
-    
   }
 
   .index {
@@ -358,4 +357,12 @@ form {
 
 #resumelink:hover {
     color: dodgerblue;
+}
+
+/* Footer CSS */
+footer {
+    font-size: small;
+    background-color: black;
+    color: rgba(255, 255, 255, 0.801);
+    text-align: center;
 }
