@@ -1,0 +1,356 @@
+html, body {
+    width:100%;
+    height:400%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* container including all the sections */
+.container {
+    margin-top: 4%;
+    padding-top: 4%;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    perspective: 8px;
+    background-image: url('Images/Bkgrnd.svg');
+    background-repeat: none;
+    background-size: cover;
+    text-align: center;
+}
+
+
+/* navigation bar css */
+.navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 60%;
+    height: 4%;
+    background-color: white;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0;
+    margin-right: 100vw;
+    padding: 1% 40% 1% 5%;
+    border-bottom: 1px;;
+    font-size: 3vmin;
+    z-index: 10;
+}
+
+/* first section with profile and description */
+.welcome {
+    padding: 2%;
+    margin: 1%;
+    margin-top: 20vh;
+    margin-bottom: 40vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 10%;
+    font-size: 3.5vmin;
+}
+
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    overflow-wrap: normal;
+    width: 70%;
+}
+
+/* specific profile image */
+.imgWelcome {
+    width: 30vw;
+    height: 30vh;
+    font-size: 0vh;
+    margin: 2%;
+    
+}
+
+/* class for the text with the name */
+.letterAnimate{
+    overflow: hidden;
+    white-space: nowrap;
+    letter-spacing: .05em;
+    display: inline-block;
+    opacity: 0;
+    animation: 
+      typing 2.3s steps(68, end),
+      blink-caret 1s step-end infinite;
+      animation-fill-mode: forwards;
+  }
+
+
+  /* button for viewing the resume */
+#dropdown {
+    border-radius: 1%;
+    border: none;
+    background-color: rgb(226, 223, 223);
+    padding: 0% 2% 0% 2%;
+    color: rgb(5, 58, 131);
+    font-size: 6.5vmin;
+}
+
+#dropdown:hover {
+    background-color: aliceblue;
+    box-shadow: 0px 0px 14px 1px white;
+    color:rgb(63, 119, 145);
+}
+
+/* class for each section title */
+.titlesection {
+    font-size: 5vmin;
+    color: white;
+}
+
+/* projects section */
+.projects {
+    border-radius: 4%;
+    box-shadow: 0px 0px 14px 1px rgba(255, 255, 255, 0.192);
+    padding: 1% 4% 4% 4%;
+    margin: 0vh 15vw 65vh 15vw;
+}
+
+/* contacts section */
+.contacts{
+    margin: 0vh 34vw 40vh 34vw;
+}
+
+/* resume section */
+.resume {
+    box-shadow: 0px 0px 14px 1px rgba(255, 255, 255, 0.192);
+    padding: 4%;
+    margin: 0vw 15vw 65vh 15vw;
+    border-radius: 4%;
+    
+}
+
+/* divider included so hyperlink links to an offset of each page */
+.divider {
+    height: 20vh;
+    width: 10vw;
+}
+
+/* resume container */
+#resumediv {
+    /* display: none; */
+    height: 9vh;
+    margin: 1%;
+    text-align: center;
+}
+
+.titlesection {
+    color: white;
+    font-size: 54min;;
+}
+
+
+/* continuation of typing animation css */
+  @keyframes typing {
+    0% { 
+        width: 0; 
+        opacity:0;
+    }
+    1% {
+        opacity:1;
+    }
+    100% { 
+        width: 100%; 
+        opacity:1;
+    }
+  }
+
+
+/* formatting for links */
+a{
+    color: rgb(5, 58, 131);
+    text-decoration: none;
+}
+
+/* specific image */
+#imgWel {
+    max-height: 100%;
+    max-width: 100%;
+    padding: 3%;
+    border-radius: 2vmin;
+    background-color: rgba(240, 248, 255, 0.497);
+}
+
+/* more css for general font color */
+a:hover {
+    color: rgb(104, 180, 246);
+}
+
+p, li {
+    color: rgb(149, 185, 236);
+}
+
+#name {
+    color:white;
+    font-size: 5vmin;
+}
+
+.break{
+    font-size: 1vmin;
+}
+
+/* css for the carousel */
+.btns{
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+#CSbtn {
+    display: flex;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.tabs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 3vmin;
+    margin-left: 12vw;
+    margin-right: 12vw;
+    overflow: hidden;
+}
+.tabContent{
+    grid-area: sectionb;
+    height: 55vh;
+    width: 100%;
+    color:rgb(86, 135, 184);
+    display: none;
+    margin-top: 3vh;
+}
+
+.tabs button{
+    padding: 2vmin;
+    border: thin;
+    background-color: rgb(162, 162, 162);
+    color: rgb(5, 58, 131);
+    color: white;
+    outline: none;
+    font-size: 2.5vmin;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 2%;
+}
+
+.tabs button:hover {
+    background-color: aliceblue;
+    box-shadow: 0px 0px 9px 3px white;
+    color:rgb(63, 119, 145);
+}
+  
+  /* Create an active/current tablink class */
+.tabs button.current {
+    background-color: aliceblue;
+    color:rgb(63, 119, 145);
+}
+  
+
+.prev, .next {
+    color: rgb(63, 119, 145);
+    font-size: 5vmin;
+    padding: 2vmin;
+  }
+
+  .prev:hover, .next:hover {
+    color: rgb(192, 219, 243);
+  }
+  
+  .active {
+    background-image: rgb(197, 234, 252);
+  }
+  
+  .imgs, .vids {
+    object-fit: contain;
+    overflow: hidden;
+    max-height: 60%;
+    max-width: 100%;
+    position: relative;
+    display: inline;
+  }
+
+  #imgs{
+      border-width: 1%;
+      border-style: solid;
+      border-color: rgb(214, 236, 255);
+  }
+  
+  .slide {
+    height: 100%;
+    width: 100%;
+  }
+
+  /* css for text for each slide */
+  .weltext{
+    color: rgb(5, 57, 129);
+  }
+
+  #CSContent {
+      display: block;
+  }
+
+  .disappearcontent {
+      display: none;
+  }
+
+  .text{
+      margin-top: 2vh;
+      color: rgb(159, 232, 252)
+  }
+  
+  .title {
+    font-weight: bolder;
+    color: aliceblue;
+    font-size: larger;
+    color: rgb(206, 236, 250)
+  }
+
+  .mini{
+    font-weight: lighter;
+    font-style: italic;
+    font-size: smaller;
+    
+  }
+
+  .index {
+    color: rgb(97, 136, 173);
+  }
+
+  /* css for highlight effect in welcome section */
+  span {
+      background-color: rgba(240, 248, 255, 0.267);
+  }
+
+  /* css for special school font */
+  .school{
+      color: rgba(206, 236, 250, 0.815);
+      background-color: transparent;
+  }
+
+.text-container{
+ margin: 0vw 5vw 0vw 5vw;
+}
+
+#resumelink {
+    font-size: medium;
+    color: aliceblue;
+}
+
+#resumelink:hover {
+    color: dodgerblue;
+}

@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home page</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <a id="HomeLink"></a>
+    <!-- navigation menu -->
+    <div class="navbar">
+            <a href = "#HomeLink">Home</a>
+            <a href = "#ResumeLink">Resume</a>
+            <a href = "#ProjectsLink">Projects</a>
+            <a href = "#ContactLink">Contact</a>
+    </div>
+
+    
+    <div class = "container">
+        <!-- Floating cell with some personal information -->
+        <div class="welcome">
+            <!-- Left side information about myself -->
+            <div class="info">
+                <div class = "containername"><p id = "name" class = "letterAnimate">STEPHANIE WEI</p></div>
+                <div class = "ListInfo">
+                        <p class="break">__________________________________________________________________</p>
+                        <p class = "weltext">Sophomore at the <span class="school">University of California Los Angeles (UCLA)</span></p>
+                        <p class = "weltext">Majoring in <span>Computer Science</span> and minoring in <span>Statistics</span></p>
+                </div>
+            </div>
+            
+            <!-- Profile image on right-->
+            <div class = "imgWelcome">
+                <img id = "imgWel" src = "Images/swei.jpg">
+            </div>
+        </div>
+
+        <!-- resume section -->
+        <div class = "divider" id="ResumeLink"></div>
+        <div class="resume">
+            <h3 class = "titlesection">RESUME</h3>
+            <!-- <button id="dropdown" onclick=displayResume()>&#8964</button> -->
+            <div id = "resumediv">
+              <svg width="7vw" height="7vh" viewBox="0 0 136 149" fill="none" pointer-events="bounding-box" xmlns="http://www.w3.org/2000/svg">
+                <a  href="Images/Oct092021Resume.pdf" target="__blank">
+                  <line x1="6.99979" y1="34.0459" x2="5.99062" y2="144.046" stroke="white" stroke-width="10"/>
+                  <line x1="125" y1="71.0685" x2="124" y2="144.068" stroke="white" stroke-width="10"/>
+                  <line x1="129.039" y1="143" x2="1.03906" y2="144" stroke="white" stroke-width="10"/>
+                  <line x1="2" y1="29" x2="63" y2="29" stroke="white" stroke-width="10"/>
+                  <path d="M128.95 4.29289C128.559 1.55922 126.027 -0.340273 123.293 0.0502513L78.7452 6.41421C76.0115 6.80474 74.112 9.3374 74.5025 12.0711C74.8931 14.8047 77.4257 16.7042 80.1594 16.3137L119.757 10.6569L125.414 50.2548C125.805 52.9885 128.337 54.888 131.071 54.4975C133.805 54.107 135.704 51.5743 135.314 48.8406L128.95 4.29289ZM74 80L128 8L120 2L66 74L74 80Z" fill="white"/>
+                  <path d="M66 74C64.8 78.8 70.8333 80 74 80L66 74Z" fill="white"/>
+                </a>
+              </svg>
+                 <!-- <iframe src="https://docs.google.com/document/d/e/2PACX-1vRk6qNzCnNyAsqcINM0DnRNqm_SmNfWsQodbS8Ey_yy3pU2O9LjjP82pEti4My35_gVZubBknNWT-Jd/pub?embedded=true" width=100% height=100%></iframe> -->
+            </div>
+        </div>
+
+        <!-- 2 tabs carousel  -->
+        <div class = "divider" id="ProjectsLink"></div>
+        <div class="projects">
+            <h3 class = "titlesection">PROJECTS</h3>
+            <div id = "projectsdiv">
+                <!-- tabs  -->
+        <div class="tabs">
+            <button class="tabLink current" onclick="openTab(event, 'CSContent', 'CSbtn', 'slide2')">Computer Science</button>
+            <button class="tabLink" onclick="openTab(event, 'artContent', 'artbtn', 'slide')">Art</button>
+        </div>
+
+        <!-- content/carousel for art -->
+        <div id="artContent" class="tabContent">
+                <div class="slide in">
+                  <img class = "imgs" id = "imgs" src="Images/artproject/art1.JPG">
+                  <div class="text">
+                      <p class="index">1/19</p>
+                      <p class="title">"Entrancement"</p>
+                      <p class="mini">18x24" charcoal/acrylic</p>
+                      <p>Wonder and awe; entrappment by an object</p>
+                    </div>
+                </div>
+
+                <div class="slide in">
+                  <img class = "imgs" id = "imgs" src="Images/artproject/art2.jpg">
+                  <div class="text">
+                    <p class="index">2/19</p>
+                    <p class="title">"Two Sides of the Same Cake"</p>
+                    <p class="mini">48x72" Oil paint</p>
+                    <p>Contrast in table behaviors</p>
+                  </div>
+                </div>
+              
+                <div class="slide in">
+                  <img class = "imgs" id = "imgs" src="Images/artproject/art3.JPG">
+                  <div class="text">
+                    <p class="index">3/19</p>
+                    <p class="title">"Metamorphose"</p>
+                    <p class="mini">18x24" color pencil/acrylic</p>
+                    <p>The change from cat whiskers to jellyfish tendrils</p>
+                  </div>
+                </div>
+
+                <div class="slide in">
+                    <img class = "imgs" id = "imgs" src="Images/artproject/art4.jpg">
+                    <div class="text">
+                      <p class="index">4/19</p>
+                      <p class="title">"Banana Skin"</p>
+                      <p class="mini">18x52" acrylic</p>
+                      <p>The uncovering of skin to reveal truth</p>
+                    </div>
+                  </div>
+
+                  <div class="slide in">
+                    <img class = "imgs" id = "imgs" src="Images/artproject/art5.jpg">
+                    <div class="text">
+                      <p class="index">5/19</p>
+                      <p class="title">"Blurred Vision"</p>
+                      <p class="mini">18x24" color pencil/acrylic</p>
+                      <p>Clearity of humans</p>
+                    </div>
+                  </div>
+
+                  <div class="slide in">
+                    <img class = "imgs" id = "imgs" src="Images/artproject/art6.jpg">
+                    <div class="text">
+                      <p class="index">6/19</p>
+                      <p class="title">"Cat Pastry"</p>
+                      <p class="mini">24x18" pen</p>
+                      <p>Metaphorical "loaf" shape of cats</p>
+                    </div>
+                  </div>
+
+                  <div class="slide in">
+                    <img class = "imgs" id = "imgs" src="Images/artproject/art7.jpg">
+                    <div class="text">
+                      <p class="index">7/19</p>
+                      <p class="title">"Liquid Angel"</p>
+                      <p class="mini">18x24" acrylic</p>
+                      <p>Surrealism with sanitizer</p>
+                    </div>
+                  </div>
+
+                  <div class="slide in">
+                    <img class = "imgs" id = "imgs" src="Images/artproject/art8.jpg">
+                    <div class="text">
+                      <p class="index">8/19</p>
+                      <p class="title">"Card Flowers"</p>
+                      <p class="mini">18x24" acrylic/wire</p>
+                      <p>Growth and age</p>
+                    </div>
+                  </div>
+
+                  <div class="slide in">
+                    <img class = "imgs" id = "imgs" src="Images/artproject/art9.jpeg">
+                    <div class="text">
+                      <p class="index">9/19</p>
+                      <p class="title">"Sweet Pressure"</p>
+                      <p class="mini">18x24" Oil paint/wire</p>
+                      <p>Weight of positivity; pressure of "good" image</p>
+                    </div>
+                  </div>
+
+                  <div class="slide in">
+                    <img class = "imgs" id = "imgs" src="Images/artproject/art11.jpg">
+                    <div class="text">
+                      <p class="index">10/19</p>
+                      <p class="title">"Fabrication"</p>
+                      <p class="mini">18x18" color pencil/acrylic</p>
+                      <p>Literal interpretation of fabrication of oneself</p>
+                    </div>
+                  </div>
+
+                  <div class="slide in">
+                    <img class = "imgs" id = "imgs" src="Images/artproject/art12.jpg">
+                    <div class="text">
+                      <p class="index">11/19</p>
+                      <p class="title">"Sensitivity"</p>
+                      <p class="mini">15.5x22" color pencil/acrylic</p>
+                      <p>Metaphorical interpretation of physical and emotional sensitivity</p>
+                    </div>
+                  </div>
+
+                  <div class="slide in">
+                    <img class = "imgs" id = "imgs" src="Images/artproject/art13.jpeg">
+                    <div class="text">
+                      <p class="index">12/19</p>
+                      <p class="title">"Tears"</p>
+                      <p class="mini">~9x12" acrylic/wire</p>
+                      <p>Masked version of oneself, wire in form of flowing tears</p>
+                    </div>
+                  </div>
+
+                  <div class="slide in">
+                    <img class = "imgs" id = "imgs" src="Images/artproject/art14.jpg">
+                    <div class="text">
+                      <p class="index">13/19</p>
+                      <p class="title">"The Sides of Nature"</p>
+                      <p class="mini">9x12" acrylic/wire</p>
+                      <p>2D and 3D flower representation</p>
+                    </div>
+                  </div>
+
+                  <div class="slide in">
+                    <img class = "imgs" id = "imgs" src="Images/artproject/art15.JPG">
+                    <div class="text">
+                      <p class="index">14/19</p>
+                      <p class="title">"Blending Nature"</p>
+                      <p class="mini">24x18" oil pastel</p>
+                      <p>Transformation project blending human and nature</p>
+                    </div>
+                  </div>
+
+                  <div class="slide in">
+                    <img class = "imgs" id = "imgs" src="Images/artproject/art16.jpg">
+                    <div class="text">
+                      <p class="index">15/19</p>
+                      <p class="title">"Reflections"</p>
+                      <p class="mini">24x18" charcoal</p>
+                      <p>Project on foreshortening and perspective</p>
+                    </div>
+                  </div>
+
+                  <div class="slide in">
+                    <img class = "imgs" id = "imgs" src="Images/artproject/art17.jpg">
+                    <div class="text">
+                      <p class="index">16/19</p>
+                      <p class="title">"Light Tragedy"</p>
+                      <p class="mini">18x12"" Oil paint</p>
+                      <p>Still life of classroom sink</p>
+                    </div>
+                  </div>
+
+                  <div class="slide in">
+                    <img class = "imgs" id = "imgs" src="Images/artproject/art18.jpg">
+                    <div class="text">
+                      <p class="index">17/19</p>
+                      <p class="title">"Weighted society"</p>
+                      <p class="mini">13x13" graphite/charcoal</p>
+                      <p>Society pressure on humans and hidden cries for help</p>
+                    </div>
+                  </div>
+
+                  <div class="slide in">
+                    <img class = "imgs" id = "imgs" src="Images/digartproject/dart1.PNG">
+                    <div class="text">
+                        <p class="index">18/19</p>
+                        <p class="title">"Lavender Freedom"</p>
+                        <p class="mini">4096x4096 iphone7s</p>
+                        <p>The peace and yet awe in nature and its features</p>
+                      </div>
+                  </div>
+  
+                  <div class="slide in">
+                      <img class = "imgs" id = "imgs" src="Images/digartproject/dart4.PNG">
+                      <div class="text">
+                        <p class="index">19/19</p>
+                        <p class="title">"Melancholy Space"</p>
+                        <p class="mini">779x807 iphone7s</p>
+                        <p>Aura of sadness within a scifi environment</p>
+                      </div>
+                    </div>
+  
+        </div>
+ 
+        <!-- content/carousel for cs -->
+        <div id="CSContent" class="tabContent">
+                <div class="slide2 in">
+                <video class = ".vids" width = "60%" height = "60%" controls>
+                    <source src="Images/csimg/stockvid.mov" type="video/mp4">
+                    Your browser does not support the video movie tag.
+                </video>
+                  <div class="text">
+                      <p class="index">1/6</p>
+                      <a class="title" href="https://github.com/Stephanie0829/Stock-tab" target="_blank">Stock Tab Chrome Extension</a>
+                      <p class="mini">Polygon REST API, Bing News Search API, CHart.js, React, HTML, CSS</p>
+                      <p class="text-container">Displays daily stock updates and news for stock-holders, traders, or trading hobbyists.</p>
+                    </div>
+                </div>
+
+                <div class="slide2 in disappearcontent">
+                    <video class = ".vids" width = "60%" height = "60%" controls>
+                        <source src="Images/csimg/GenshinWeb.mov" type="video/mp4">
+                        Your browser does not support the video movie tag.
+                    </video>
+                        <div class="text">
+                            <p class="index">2/6</p>
+                            <a class="title" href="https://genshin-team-builder.netlify.app/" target="_blank">Team Calculator (Genshin Impact)</a>
+                            <p class="mini">HTML, CSS, Javascript</p>
+                            <p class="text-container">Widget where users select characters for an output rating based on the potential of the team composition within the game.</p>
+                        </div>
+                </div>
+
+                <div class="slide2 in disappearcontent">
+                    <video class = ".vids" width = "50%" height = "50%" controls>
+                        <source src="Images/csimg/Gomoku.mov" type="video/mp4">
+                        Your browser does not support the video movie tag.
+                    </video>
+                      <div class="text">
+                          <p class="index">3/6</p>
+                          <a class="title" href="https://github.com/Stephanie0829/Gomoku" target="_blank">Gomoku</a>
+                          <p class="mini">Python and imported modules</p>
+                          <p class="text-container">Python game based on 5-in-a-row with human vs. human and human vs. AI options.</p>
+                        </div>
+                </div>
+
+                <div class="slide2 in disappearcontent">
+                    <video class = ".vids" width = "60%" height = "60%" controls>
+                        <source src="Images/csimg/Blueberry.mov" type="video/mp4">
+                        Your browser does not support the video movie tag.
+                    </video>
+                      <div class="text">
+                          <p class="index">4/6</p>
+                          <a class="title" href="https://stephanie0829.github.io/Berry-Machine/home.html" target="_blank">The Blueberry Machine</a>
+                          <p class="mini">HTML, CSS, Javascript</p>
+                          <p class="text-container"> Simple gacha game where user can randomly "spin" to recieve a berry of certain rarity from the machine.</p>
+                        </div>
+                </div>
+
+                <div class="slide2 in disappearcontent">
+                    <img class = "imgs" width = "40%" height = "40%" src="Images/csimg/Wurd.png">
+                      <div class="text">
+                          <p class="index">5/6</p>
+                          <p class="title">Wurd</p>
+                          <p class="mini">C++</p>
+                          <p class="text-container">Text editor allowing for spelling suggestions, keyboard actions, and document handling.</p>
+                        </div>
+                </div>
+
+                <div class="slide2 in disappearcontent">
+                    <img class = "imgs" width = "35%" height = "35%" src="Images/csimg/Racer.png">
+                      <div class="text">
+                          <p class="index">6/6</p>
+                          <p class="title">Ghost Racer</p>
+                          <p class="mini">C++</p>
+                          <p class="text-container">Game where a racer (the user) avoids incoming obstacles, shoots projectiles, and can collect items. Racer status includes attributes such as health, lives, total points etc.</p>
+                        </div>
+                </div>
+        </div> 
+
+        <!--prev and next buttons for  art-->
+        <div class="btns" id="artbtn"> 
+            <a class="prev" onclick="changeSlide(-1, 'slide')">&#5130;</a>
+            <a class="next" onclick="changeSlide(1, 'slide')">&#5125;</a>
+        </div>
+
+         <!--prev and next buttons for cs-->
+        <div class="btns" id="CSbtn"> 
+            <a class="prev" onclick="changeSlide(-1, 'slide2')">&#5130;</a>
+            <a class="next" onclick="changeSlide(1, 'slide2')">&#5125;</a>
+        </div>
+
+         <!--extra padding for bottom edge/buttons for certain viewport-->
+        <div class="item-c""></div>
+        </div>
+        </div>
+
+
+        <!-- Contacts section-->
+        <div class = "divider" id="ContactLink"></div>
+        <div class="contacts">
+            <h3 class = "titlesection">CONTACTS</h3>
+            <form>
+                <!-- github -->
+                <svg id="gitbtn" xmlns="http://www.w3.org/2000/svg" xmlns:xlink=“http://www.w3.org/1999/xlink" viewBox="0 0 16 16" width=15vmin height=15vmin>
+                     <a xlink:href="https://github.com/Stephanie0829" target="__blank">
+                        <circle r=1000 fill="transparent"></circle>
+                        <path fill="white" fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z ">
+                        </path>
+                    </a>
+                </svg>
+                <!-- linkedin -->
+                <svg id="mailbtn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width=15vmin height=15vmin xmlns:xlink=“http://www.w3.org/1999/xlink" viewBox="0 0 16 16" width=15vmin height=15vmin>
+                    <a xlink:href ="https://www.linkedin.com/in/stephanie-wei-928a2b1b3/" target="__blank">
+                        <circle r=1000 fill="transparent"></circle>
+                        <path fill = "white" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </path>
+                        <!-- source: iconmonstr.com https://iconmonstr.com/linkedin-3-svg/-->
+                    </a>
+                </svg>
+            <form>
+        </div>
+
+    </div> 
+
+</body>
+</html>
